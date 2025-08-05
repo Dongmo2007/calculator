@@ -17,7 +17,7 @@ throughout the exercice i learn new concepts about DOM manipulation, adapt my si
 
 `````html
 <div class="toggle-switch">
-  <input type="checkbox" id="switch" class="tggl" data-content="content1" />
+  <input type="checkbox" id="switch" class="tggl" data-content="content1" /></div>
   ````css .cellcontainer { padding: 10px; width: 35%; height: 50dvh; background:
   hsla(223, 100%, 22%, 1.00); /* border: 1px solid; */ display: grid;
   grid-template-columns: repeat(4, 2fr); } ````javascript button.forEach((bt) =>
@@ -34,5 +34,5 @@ throughout the exercice i learn new concepts about DOM manipulation, adapt my si
   how to implement the logic hidden behind each project. exercise Author -
   github - (https://github.com/Dongmo2007) - Frontend Mentor -
   [@Dongmo2007](https://www.frontendmentor.io/profile/Dongmo2007)
-</div>
+
 `````

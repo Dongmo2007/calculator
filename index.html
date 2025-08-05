@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h4>calc</h4>
+        <div class="butswitch">
+          <p>THEME</p>
+          <div class="toggle-switch">
+            <input
+              type="checkbox"
+              id="switch"
+              class="tggl"
+              data-content="content1"
+            />
+            <label for="switch">1</label>
+            <input
+              type="checkbox"
+              id="switch1"
+              class="tggl"
+              data-content="content2"
+            />
+            <label for="switch1">2</label>
+            <input
+              type="checkbox"
+              id="switch2"
+              class="tggl"
+              data-content="content3"
+            />
+            <label for="switch2">3</label>
+          </div>
+        </div>
+      </div>
+      <input type="text" maxlength="20" id="ecran" />
+      <div class="cellcontainer">
+        <button class="cell">7</button>
+        <button class="cell">8</button>
+        <button class="cell">9</button>
+        <button class="cell del">DEL</button>
+        <button class="cell">4</button>
+        <button class="cell">5</button>
+        <button class="cell">6</button>
+        <button class="cell">+</button>
+        <button class="cell">1</button>
+        <button class="cell">2</button>
+        <button class="cell">3</button>
+        <button class="cell">-</button>
+        <button class="cell">.</button>
+        <button class="cell">0</button>
+        <button class="cell">/</button>
+        <button class="cell">*</button>
+        <button class="cell but1">RESET</button>
+        <button class="cell but2">=</button>
+      </div>
+    </div>
+    <script src="j.js"></script>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 707;
+  font-style: normal;
+  font-size: 32px;
+  background: hsl(221, 72%, 24%);
+  color: white;
+}
+
+/* toggle switch */
+.toggle-switch {
+  display: flex;
+  gap: 5px;
+}
+.toggle-switch input {
+  display: none;
+}
+.toggle-switch label {
+  margin-top: 16.5%;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-switch label::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-switch input:checked + label {
+  background-color: green;
+}
+.toggle-switch input:checked + label::before {
+  transform: translateX(15px);
+}
+
+.butswitch {
+  display: flex;
+  gap: 18px;
+}
+
+.container {
+  /* margin: auto; */
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  /* border: 2px solid; */
+  text-align: center;
+  align-items: center;
+  gap: 0.3em;
+}
+.title {
+  width: 35%;
+  display: flex;
+  gap: 10em;
+}
+h1 {
+  font-size: 32px;
+}
+p {
+  margin-top: 9%;
+  font-size: 16px;
+}
+.contain {
+  width: 50%;
+}
+.cellcontainer {
+  padding: 10px;
+  width: 35%;
+  height: 50dvh;
+  background: hsl(223, 77%, 34%);
+  /* border: 1px solid; */
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+.cell {
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  background: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 0%);
+  box-shadow: 0px 4px 0px 0px;
+  text-align: center;
+  width: 80%;
+  height: 7dvh;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+.cell:hover,
+.del:hover,
+.but1:hover,
+.but2:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.del {
+  cursor: pointer;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 80%;
+  height: 7dvh;
+  border-radius: 7px;
+  background: hsl(225, 21%, 49%);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+
+.but1 {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 80%;
+  height: 7dvh;
+  border-radius: 7px;
+  background: hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+  width: 180%;
+  margin-left: 10%;
+}
+.button {
+  display: flex;
+  gap: 14px;
+  /* border: 2px solid; */
+  width: 300%;
+  margin-left: 10%;
+}
+
+.but1:hover,
+.del:hover {
+  background: hsl(222, 28%, 63%);
+}
+
+.but2 {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 80%;
+  height: 7dvh;
+  border-radius: 7px;
+  width: 180%;
+  margin-left: 111%;
+  background: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+.but2:hover {
+  background: hsl(6, 56%, 55%);
+}
+input[type="text"] {
+  font-weight: bold;
+  padding-left: 20%;
+  padding-right: 1%;
+  width: 35.2%;
+  height: 8dvh;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: hsl(223, 64%, 43%);
+  border-radius: 7px;
+  text-align: right;
+  color: white;
+}
+
+.them3,
+.them2,
+.them1 {
+  background-color: hsl(268, 75%, 9%);
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0px 4px 0px 0px hsl(285, 91%, 52%);
+  text-align: center;
+  width: 80%;
+  height: 7dvh;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+.them1:hover {
+  background-color: white;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.them3:hover,
+.them2:hover {
+  background-color: hsl(290, 70%, 36%);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.de,
+.del1,
+.del2 {
+  cursor: pointer;
+  background: hsl(290, 70%, 36%);
+  color: white;
+  box-shadow: 0px 4px hsl(285, 91%, 52%);
+  border: 2px solid transparent;
+  border-radius: 7px;
+  width: 80%;
+  height: 7dvh;
+  margin: auto;
+  padding: 5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.de:hover,
+.del1:hover,
+.del2:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: hsl(290, 70%, 36%);
+}
+.but,
+.but02,
+.but01 {
+  background: hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+  cursor: pointer;
+  font-size: 32px;
+  background: hsl(290, 70%, 36%);
+  color: white;
+  border: 2px solid transparent;
+  box-shadow: 0px 4px hsl(285, 91%, 52%);
+  border-radius: 7px;
+  font-weight: bold;
+  height: 6.5dvh;
+  width: 180%;
+  margin-left: 10%;
+}
+.but:hover,
+.but02:hover,
+.but01:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: hsl(290, 70%, 36%);
+}
+.bu,
+.bu02,
+.bu01 {
+  width: 180%;
+  margin-left: 111%;
+  background: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+  height: 6.5dvh;
+  cursor: pointer;
+  background: hsl(176, 100%, 44%);
+  font-size: 32px;
+  border: 2px solid transparent;
+  box-shadow: 0px 4px hsl(177, 92%, 70%);
+  border-radius: 7px;
+  font-weight: bold;
+}
+.bu:hover,
+.bu02:hover,
+.bu01:hover {
+  background-color: hsl(176, 100%, 44%);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.them2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+  box-shadow: 0px 4px 0px 0px hsl(35, 11%, 61%);
+}
+.them2:hover {
+  background-color: white;
+}
+.del1,
+.but02 {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 4px hsl(185, 58%, 25%);
+}
+.del1:hover,
+.but02:hover {
+  background-color: hsl(185, 42%, 48%);
+}
+.bu02 {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 4px hsl(25, 99%, 27%);
+}
+.bu02:hover {
+  background-color: hsl(25, 85%, 48%);
+}
+.ipt {
+  background-color: white;
+  color: hsl(60, 10%, 19%);
+}
+
+.them1 {
+  background-color: white;
+  color: hsl(223, 31%, 20%);
+  box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+.del2,
+.but02 {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+.del2:hover,
+.but02:hover {
+  background-color: hsl(222, 42%, 73%);
+}
+.bu02 {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+.bu02:hover {
+  background-color: hsl(6, 59%, 63%);
+}
+@media screen and (max-width: 1440px) {
+  body {
+    height: auto;
+  }
+  .title {
+    gap: 8.7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    height: auto;
+  }
+  .container {
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .title {
+    gap: 1rem;
+    width: 70%;
+  }
+  input[type="text"] {
+    border: none;
+    width: 80%;
+  }
+  .cellcontainer {
+    width: 80%;
+    height: 9.5em;
+    gap: 0.2em;
+  }
+  .cell,
+  .them1,
+  .them2,
+  .them3 {
+    width: 90%;
+    height: 1.5em;
+    gap: 0.2em 0.2em;
+  }
+  .but1,
+  .but2,
+  .but,
+  .bu,
+  .but02,
+  .bu02 {
+    cursor: pointer;
+    width: 200%;
+    font-size: 17px;
+  }
+  .but1,
+  .but,
+  .but02 {
+    margin-left: 6%;
+  }
+  .but2,
+  .bu02,
+  .bu {
+    width: 200%;
+    margin-left: 115%;
+  }
+  .del,
+  .del2,
+  .del1,
+  .de {
+    cursor: pointer;
+    width: 95%;
+    height: 95%;
+    font-size: 20px;
+  }
+}
